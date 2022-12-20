@@ -28,7 +28,7 @@
 body {
     width: 1120px;
     margin: 0 auto;
-    color: #F5F5F5;
+    background-color: #F5F5F5;
 }
 
 header {
@@ -36,7 +36,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-    color: #F5F5F5;
+    background-color: #F5F5F5;
     position: fixed;
     width: 1120px;
     top: 0;
@@ -82,7 +82,7 @@ header nav p:not(:list-child) {
 }
 
 .introductory .info {
-    width: 560px;
+    width: 600px;
 }
 
 .introductory h1 {
@@ -188,9 +188,9 @@ header nav p:not(:list-child) {
 }
 
 .final .blok-1,
-.blok-2,
-.blok-3,
-.blok-4 {
+.final .blok-2,
+.final .blok-3,
+.final .blok-4 {
     background: #EEF7FF;
     border-radius: 21px;
     margin-top: 61px;
@@ -202,7 +202,10 @@ header nav p:not(:list-child) {
     align-items: center;
 }
 
-.final .bloks .blok-1 h4 {
+.final .bloks .blok-1 h4,
+.final .bloks .blok-2 h4,
+.final .bloks .blok-3 h4,
+.final .bloks .blok-4 h4  {
     font: 800 24px 'Mulish';
     color: #001A49;
     margin-bottom: 20px;
@@ -222,11 +225,6 @@ header nav p:not(:list-child) {
     margin: 39px 46px 69px;
 }
 
-.final .bloks .blok-2 h4 {
-    font: 800 24px 'Mulish';
-    color: #001A49;
-    margin-bottom: 20px;
-}
 
 .final .bloks .blok-2 p {
     font: 400 16px 'Mulish';
@@ -242,11 +240,6 @@ header nav p:not(:list-child) {
     margin: 39px 46px 69px;
 }
 
-.final .bloks .blok-3 h4 {
-    font: 800 24px 'Mulish';
-    color: #001A49;
-    margin-bottom: 20px;
-}
 
 .final .bloks .blok-3 p {
     font: 400 16px 'Mulish';
@@ -260,12 +253,6 @@ header nav p:not(:list-child) {
     background-repeat: no-repeat;
     background-size: contain;
     margin: 39px 46px 69px;
-}
-
-.final .bloks .blok-4 h4 {
-    font: 800 24px 'Mulish';
-    color: #001A49;
-    margin-bottom: 20px;
 }
 
 .final .bloks .blok-4 p {
@@ -329,6 +316,10 @@ header nav p:not(:list-child) {
         display: none;
     }
 
+    .introductory{
+        margin-top: 60px;
+     }
+
     .introductory .img-video {
         display: none;
     }
@@ -350,6 +341,11 @@ header nav p:not(:list-child) {
         text-align: center;
     }
 
+    .invitation h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
     .statistics .wrapper {
         flex-direction: column;
         background-color: #F5F5F5;
@@ -361,29 +357,38 @@ header nav p:not(:list-child) {
         border-right: 0;
     }
 
-    .final .wrapper .info{
+    .final .wrapper .info {
         max-width: 130px;
     }
 
-    .final .invitation .img-final{
+    .wrapper .center h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .wrapper .center p {
+        text-align: center;
+    }
+
+    .final .invitation .img-final {
         width: 93px;
         height: 56px;
     }
 
     .final .invitation .h2 {
-    font-size: 25px;
-    text-align: center;
+        font-size: 25px;
+        text-align: center;
     }
 
-.final .wrapper .img {
-    display: none;
-}
-.final .blok-1,
-.blok-2,
-.blok-3,
-.blok-4 {
-    max-width: 600px ;
-}
+    .final .wrapper .img {
+        display: none;
+    }
+
+    .final .blok-1,
+    .blok-2,
+    .blok-3,
+    .blok-4 {
+        max-width: 600px;
+    }
 
 
 
