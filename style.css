@@ -1,21 +1,21 @@
 @font-face {
     font-family: "Mulish";
+    src: url(./landing/fonts/Mulish-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Mulish";
+    src: url(./fonts/Mulish-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Mulish";
     src: url(./fonts/Mulish-Bold.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "Mulish";
     src: url(./fonts/Mulish-ExtraBold.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: "Mulish";
-    src: url(./fonts/Mulish-Medium.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: "Mulish";
-    src: url(./fonts/Mulish-Regular.ttf) format("truetype");
 }
 
 * {
@@ -36,7 +36,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-    background-color: #F5F5F5;
+    color: #F5F5F5;
     position: fixed;
     width: 1120px;
     top: 0;
@@ -63,14 +63,17 @@ header .btn {
 
 header nav {
     display: flex;
-
 }
 
 header nav p {
     margin-right: 35px;
+    color: #001A49;
 }
 
-header nav p:not(:list-child) {}
+header nav p:not(:list-child) {
+    border-right: auto;
+
+}
 
 .introductory {
     display: flex;
@@ -127,7 +130,7 @@ header nav p:not(:list-child) {}
 
 .statistics .wrapper {
     display: flex;
-    justify- space-between;
+    justify-content: space-between;
     background-color: #FFFFFF;
     border: 1px solid #E7EAEB;
     border-radius: 21px;
@@ -159,7 +162,6 @@ header nav p:not(:list-child) {}
     align-items: center;
     flex-direction: column;
     margin-top: 194px;
-
 }
 
 .final .center h2 {
@@ -292,7 +294,7 @@ header nav p:not(:list-child) {}
     background-size: contain;
     width: 153px;
     height: 56px;
-margin-top: 122px;
+    margin-top: 122px;
 }
 
 .invitation h2 {
@@ -312,4 +314,77 @@ margin-top: 122px;
     justify-content: center;
     padding: 15px 0;
     margin-top: 31px;
+}
+
+@media screen and (max-width:600px) {
+    body {
+        width: 600px;
+    }
+
+    header {
+        width: 600px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .introductory .img-video {
+        display: none;
+    }
+
+    .introductory .btn {
+        margin: auto;
+    }
+
+    .introductory .info {
+        margin-top: 100px;
+    }
+
+    .introductory .info h1 {
+        font: 800 30px 'Mulish';
+        text-align: center;
+    }
+
+    .introductory .info p {
+        text-align: center;
+    }
+
+    .statistics .wrapper {
+        flex-direction: column;
+        background-color: #F5F5F5;
+        border-width: 0;
+        align-items: center;
+    }
+
+    .statistics .wrapper div:not(:last-child) {
+        border-right: 0;
+    }
+
+    .final .wrapper .info{
+        max-width: 130px;
+    }
+
+    .final .invitation .img-final{
+        width: 93px;
+        height: 56px;
+    }
+
+    .final .invitation .h2 {
+    font-size: 25px;
+    text-align: center;
+    }
+
+.final .wrapper .img {
+    display: none;
+}
+.final .blok-1,
+.blok-2,
+.blok-3,
+.blok-4 {
+    max-width: 600px ;
+}
+
+
+
 }
