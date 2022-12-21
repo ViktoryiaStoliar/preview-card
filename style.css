@@ -28,7 +28,7 @@
 body {
     width: 1120px;
     margin: 0 auto;
-    background-color: #F5F5F5;
+    background-color: #F5F5F5;;
 }
 
 header {
@@ -136,6 +136,8 @@ header nav p:not(:list-child) {
     border-radius: 21px;
     height: 172px;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
 .statistics .wrapper div {
@@ -148,6 +150,18 @@ header nav p:not(:list-child) {
 
 .statistics .wrapper div:not(:last-child) {
     border-right: 1px solid #E7EAEB;
+}
+
+.statistics .img-oval {
+    background-image: url(./assets/Side\ Shape.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 250px;
+    height: 280px;
+    position: absolute;
+    z-index: 1;
+    top: 650px;
+    margin-left: -200px;
 }
 
 /* section final */
@@ -205,61 +219,23 @@ header nav p:not(:list-child) {
 .final .bloks .blok-1 h4,
 .final .bloks .blok-2 h4,
 .final .bloks .blok-3 h4,
-.final .bloks .blok-4 h4  {
+.final .bloks .blok-4 h4 {
     font: 800 24px 'Mulish';
     color: #001A49;
     margin-bottom: 20px;
 }
 
-.final .bloks .blok-1 p {
-    font: 400 16px 'Mulish';
-    color: #4F596A;
-}
-
-.final .bloks .blok-1 .img {
-    background-image: url(./assets/Vector.svg);
-    width: 64px;
-    height: 64px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 39px 46px 69px;
-}
-
-
-.final .bloks .blok-2 p {
-    font: 400 16px 'Mulish';
-    color: #4F596A;
-}
-
-.final .bloks .blok-2 .img {
-    background-image: url(./assets/Vector.svg);
-    width: 64px;
-    height: 64px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 39px 46px 69px;
-}
-
-
-.final .bloks .blok-3 p {
-    font: 400 16px 'Mulish';
-    color: #4F596A;
-}
-
-.final .bloks .blok-3 .img {
-    background-image: url(./assets/Vector.svg);
-    width: 64px;
-    height: 64px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 39px 46px 69px;
-}
-
+.final .bloks .blok-1 p,
+.final .bloks .blok-2 p,
+.final .bloks .blok-3 p,
 .final .bloks .blok-4 p {
     font: 400 16px 'Mulish';
     color: #4F596A;
 }
 
+.final .bloks .blok-1 .img,
+.final .bloks .blok-2 .img,
+.final .bloks .blok-3 .img,
 .final .bloks .blok-4 .img {
     background-image: url(./assets/Vector.svg);
     width: 64px;
@@ -316,9 +292,9 @@ header nav p:not(:list-child) {
         display: none;
     }
 
-    .introductory{
+    .introductory {
         margin-top: 60px;
-     }
+    }
 
     .introductory .img-video {
         display: none;
@@ -357,6 +333,10 @@ header nav p:not(:list-child) {
         border-right: 0;
     }
 
+    .statistics .img-oval {
+        display: none;
+    }
+
     .final .wrapper .info {
         max-width: 130px;
     }
@@ -365,6 +345,7 @@ header nav p:not(:list-child) {
         font-size: 30px;
         text-align: center;
     }
+
     .wrapper .center p {
         text-align: center;
     }
