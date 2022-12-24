@@ -28,7 +28,8 @@
 body {
     width: 1120px;
     margin: 0 auto;
-    background-color: #F5F5F5;;
+    background-color: #F5F5F5;
+    ;
 }
 
 header {
@@ -279,9 +280,47 @@ header nav p:not(:list-child) {
     margin-top: 31px;
 }
 
+footer .wrapper .end-end .end {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .wrapper .end .img {
+    background-image: url(./assets/Marico\ \(1\).svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 79px;
+    height: 56px;
+    padding-right: 20px;
+}
+
+footer .wrapper .end h4 {
+    font: 800 37px 'Mulish';
+    color: #001A49;
+}
+
+footer .wrapper .end-end p {
+    font-family: 'Mulish';
+    font-style: 500 27px normal;
+    color: #707070;
+}
+
+footer .wrapper p {
+    font-family: 500 30px 'Mulish';
+    color: #707070;
+}
+
 @media screen and (max-width:600px) {
     body {
         width: 600px;
+        /* max-width: 95%; */
     }
 
     header {
