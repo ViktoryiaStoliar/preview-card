@@ -29,7 +29,6 @@ body {
     width: 1120px;
     margin: 0 auto;
     background-color: #F5F5F5;
-    ;
 }
 
 header {
@@ -71,9 +70,8 @@ header nav p {
     color: #001A49;
 }
 
-header nav p:not(:list-child) {
-    border-right: auto;
-
+header nav p:last-child {
+    margin-right: 0;
 }
 
 .introductory {
@@ -186,7 +184,7 @@ header nav p:not(:list-child) {
     color: #001A49;
 }
 
-.final .center p {
+.final .wrapper .center p {
     width: 560px;
     height: 60px;
     font: 400 20px 'Mulish';
@@ -202,19 +200,30 @@ header nav p:not(:list-child) {
     flex-direction: column;
 }
 
-.final .blok-1,
-.final .blok-2,
-.final .blok-3,
-.final .blok-4 {
-    background: #EEF7FF;
-    border-radius: 21px;
+.final .bloks .blok-1,
+.final .bloks .blok-2,
+.final .bloks .blok-3,
+.final .bloks .blok-4 {
+    background-color: #8bb5da;
+    border-radius: 30px;
     margin-top: 61px;
     width: 1120px;
     height: 172px;
-    border-radius: 21px;
     display: flex;
-    flex-direction: row;
     align-items: center;
+    padding-right: 20px;
+}
+
+.final .bloks .blok-1 .img,
+.final .bloks .blok-2 .img,
+.final .bloks .blok-3 .img,
+.final .bloks .blok-4 .img {
+    background-image: url(./assets/Vector.svg);
+    width: 60px;
+    height: 64px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 20px 20px;
 }
 
 .final .bloks .blok-1 h4,
@@ -232,18 +241,6 @@ header nav p:not(:list-child) {
 .final .bloks .blok-4 p {
     font: 400 16px 'Mulish';
     color: #4F596A;
-}
-
-.final .bloks .blok-1 .img,
-.final .bloks .blok-2 .img,
-.final .bloks .blok-3 .img,
-.final .bloks .blok-4 .img {
-    background-image: url(./assets/Vector.svg);
-    width: 64px;
-    height: 64px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 39px 46px 69px;
 }
 
 .invitation {
